@@ -41,9 +41,6 @@ class AuthController extends Controller
                     'email' => ['The provided credentials are incorrect.']
                 ]
             ];
-            // return [
-            //     'message' => 'The provided credentials are incorrect.' 
-            // ];
         }
 
         $token = $user->createToken($user->name);
